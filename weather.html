@@ -92,7 +92,7 @@
     }
     //run when the document object model is ready for javascript code to execute
 		$(document).ready(function() {
-                  	var url ='https://api.weatherstack.com/forecast?access_key=5bc82451636190abd9d7afe6fe9b20b5&query=40,-105&forecast_days=6'; //Place your weatherstack API Call Here
+                  	var url ='https://api.weatherstack.com/forecast?access_key=5bc82451636190abd9d7afe6fe9b20b5&query=40.0150,-105.27&forecast_days=6'; //Place your weatherstack API Call Here
 	                $.ajax({url:url, dataType:"jsonp"}).then(function(data) {
 	                	console.log(data);//Review all of the data returned
 	                	console.log("Current Temp: " + data.current.temperature);//View Today's Temp
